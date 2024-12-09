@@ -23,6 +23,7 @@ function App() {
         <br />
         to CSV File
       </button>
+
       <fieldset id='mabelField' className='fields'>
         <legend className='legends'>Mabel, Heir to Cragflame</legend>
         <div className='divPictures'>
@@ -196,20 +197,6 @@ function App() {
           </form>
         </div>
       </fieldset>
-      <br />
-      <div id='divDisplay'>
-        <table id='display'>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Image</th>
-            </tr>
-          </thead>
-          <tbody id='tbody'></tbody>
-        </table>
-      </div>
       <br />
     </>
   );
