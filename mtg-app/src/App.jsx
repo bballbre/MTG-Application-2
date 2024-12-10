@@ -11,7 +11,7 @@ function App() {
       <h1>Magic The Gathering Variant Singles</h1>
       <button type='submit' id='checkout'>
         <img
-          src='Images/shoppingCart.jpg'
+          src='./Public/Images/shoppingCart.jpg'
           alt='checkoutButton'
           width={50}
           height={50}
@@ -28,13 +28,44 @@ function App() {
         <legend className='legends'>Mabel, Heir to Cragflame</legend>
         <div className='divPictures'>
           <img
-            src='Images/bloomburrow-variants-299467.png'
+            src='./Public/Images/bloomburrow-variants-299467.png'
             id='mabelPic'
             className='pictures'
             alt='mabel'
             width={300}
             height={350}
           />
+        </div>
+        <div className='forms'>
+          <form id='mabelCart' className='theForms'>
+            <label className='price' id='mabelPrice'>
+              $88.99
+            </label>
+            <br />
+            <select name='quantity' className='quantity' id='mabelQuantity'>
+              <option value={0} selected=''>
+                0
+              </option>
+              <option value={1}>1</option>
+              <option value={2}>2</option>
+              <option value={3}>3</option>
+              <option value={4}>4</option>
+              <option value={5}>5</option>
+            </select>
+            <input
+              type='submit'
+              className='submit'
+              defaultValue='Add to Cart'
+            />
+            <button type='reset' className='trash'>
+              <img
+                src='./Public/Images/trashcan.jpeg'
+                alt='trash'
+                width={20}
+                height={20}
+              />
+            </button>
+          </form>
         </div>
         <div className='details'>
           <table>
@@ -76,13 +107,27 @@ function App() {
             </tbody>
           </table>
         </div>
+      </fieldset>
+      <br />
+      <fieldset id='razorkinField' className='fields'>
+        <legend className='legends'>Razorkin Needlehead</legend>
+        <div className='divPictures'>
+          <img
+            src='./Public/Images/duskmourn-house-of-horror-variants-301426.png'
+            className='pictures'
+            id='razorkinPic'
+            alt='Razorkin'
+            width={300}
+            height={350}
+          />
+        </div>
         <div className='forms'>
-          <form id='mabelCart' className='theForms'>
-            <label className='price' id='mabelPrice'>
-              $88.99
+          <form id='razorkinCart' className='theForms'>
+            <label className='price' id='razorkinPrice'>
+              $12.99
             </label>
             <br />
-            <select name='quantity' className='quantity' id='mabelQuantity'>
+            <select name='quantity' className='quantity' id='razorkinQuantity'>
               <option value={0} selected=''>
                 0
               </option>
@@ -99,27 +144,13 @@ function App() {
             />
             <button type='reset' className='trash'>
               <img
-                src='Images/trashcan.jpeg'
+                src='./Public/Images/trashcan.jpeg'
                 alt='trash'
                 width={20}
                 height={20}
               />
             </button>
           </form>
-        </div>
-      </fieldset>
-      <br />
-      <fieldset id='razorkinField' className='fields'>
-        <legend className='legends'>Razorkin Needlehead</legend>
-        <div className='divPictures'>
-          <img
-            src='Images/duskmourn-house-of-horror-variants-301426.png'
-            className='pictures'
-            id='razorkinPic'
-            alt='Razorkin'
-            width={300}
-            height={350}
-          />
         </div>
         <div className='details'>
           <table>
@@ -164,37 +195,6 @@ function App() {
               </tr>
             </tbody>
           </table>
-        </div>
-        <div className='forms'>
-          <form id='razorkinCart' className='theForms'>
-            <label className='price' id='razorkinPrice'>
-              $12.99
-            </label>
-            <br />
-            <select name='quantity' className='quantity' id='razorkinQuantity'>
-              <option value={0} selected=''>
-                0
-              </option>
-              <option value={1}>1</option>
-              <option value={2}>2</option>
-              <option value={3}>3</option>
-              <option value={4}>4</option>
-              <option value={5}>5</option>
-            </select>
-            <input
-              type='submit'
-              className='submit'
-              defaultValue='Add to Cart'
-            />
-            <button type='reset' className='trash'>
-              <img
-                src='Images/trashcan.jpeg'
-                alt='trash'
-                width={20}
-                height={20}
-              />
-            </button>
-          </form>
         </div>
       </fieldset>
       <br />

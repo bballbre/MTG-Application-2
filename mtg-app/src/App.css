@@ -20,7 +20,10 @@ h1 {
 .fields {
   clear: right;
   background-color: var(--antiflash-white);
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
   gap: 10px;
   justify-content: center;
   flex-wrap: wrap;
@@ -45,6 +48,7 @@ h1 {
 
 div.divPictures {
   margin-top: 10px;
+  grid-column-start: 1;
 }
 
 div.details {
@@ -52,10 +56,10 @@ div.details {
   color: var(--antiflash-white);
   margin-top: 10px;
   border-radius: 10px;
-  height: 350px;
-  max-width: 300px;
+  max-width: 550px;
   font-family: georgia, serif;
   overflow: scroll;
+  grid-column: 1 / span 2;
 }
 
 table {
@@ -63,15 +67,17 @@ table {
 }
 
 div.forms {
-  margin-top: 10px;
-  background-color: var(--hunter-green);
+  margin-top: 100px;
+  background-color: var(--space-cadet);
   padding: 25px;
-  width: 155px;
+  width: 150px;
   border-style: ridge;
   border-radius: 10px;
   color: var(--lemon-lime);
   height: 75px;
   text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
 label.price {
   font-size: 36px;
@@ -147,6 +153,6 @@ a:hover {
 }
 
 /* 
-  Created on : Oct 2, 2024, 3:04:49 PM
+  Created on : Dec 10, 2024, 10:05:00 AM
   Author     : bolling.breanna
 */
